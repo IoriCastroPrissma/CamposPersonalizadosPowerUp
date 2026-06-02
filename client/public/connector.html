@@ -8,13 +8,14 @@
 <body>
   <script>
     window.TrelloPowerUp.initialize({
-      'card-back-section': function(t, options ) {
+      'card-back-section': function(t, options  ) {
         return {
           title: 'Private Fields',
           icon: './icon.svg',
           content: {
             type: 'iframe',
-            url: t.signUrl('./card-back.html'),
+            // Corrigido: Agora aponta para a tela certa do React
+            url: t.signUrl('./index.html?view=card-back'),
             height: 300
           }
         };
@@ -22,7 +23,8 @@
       'show-settings': function(t, options) {
         return t.modal({
           title: 'Configuração - Private Fields',
-          url: t.signUrl('./settings.html'),
+          // Corrigido: Agora aponta para as configurações do React
+          url: t.signUrl('./index.html?view=settings'),
           height: 700
         });
       },
@@ -33,7 +35,8 @@
           callback: function(t) {
             return t.modal({
               title: 'Exportar Dados para Excel',
-              url: t.signUrl('./export.html'),
+              // Corrigido: Agora aponta para a tela de exportação do React
+              url: t.signUrl('./index.html?view=export'),
               height: 400
             });
           }
