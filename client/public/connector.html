@@ -7,32 +7,25 @@
 </head>
 <body>
   <script>
-    // Inicializar o Power-Up com as capacidades necessárias
     window.TrelloPowerUp.initialize({
-      // 1. Seção traseira do cartão (Card Back Section)
-      'card-back-section': function(t, options) {
+      'card-back-section': function(t, options ) {
         return {
           title: 'Private Fields',
-          icon: './icon.svg', // Caminho relativo para o ícone
+          icon: './icon.svg',
           content: {
             type: 'iframe',
             url: t.signUrl('./card-back.html'),
-            height: 250 // Altura inicial do iframe
+            height: 300
           }
         };
       },
-      
-      // 2. Área de configurações do Power-Up (Show Settings)
       'show-settings': function(t, options) {
         return t.modal({
           title: 'Configuração - Private Fields',
           url: t.signUrl('./settings.html'),
-          height: 700,
-          fullscreen: false
+          height: 700
         });
       },
-
-      // 3. Botão do quadro para exportar dados para Excel
       'board-buttons': function(t, options) {
         return [{
           icon: './icon.svg',
