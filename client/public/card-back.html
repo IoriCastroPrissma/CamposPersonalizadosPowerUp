@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Private Fields - Cartão</title>
+  <script src="https://p.trellocdn.com/power-up.min.js"></script>
+  <script>
+    // Repassar o contexto do Trello como parâmetro de busca para a aplicação React
+    const t = window.TrelloPowerUp.iframe();
+    const context = t.getContext();
+    const queryParams = new URLSearchParams({
+      view: 'card-back',
+      boardId: context.board,
+      cardId: context.card || '',
+      memberId: context.member
+    });
+    // Redirecionar para a aplicação React rodando na raiz
+    window.location.href = './index.html?' + queryParams.toString();
+  </script>
+</head>
+<body>
+  <div style="font-family: sans-serif; color: #5e6c84; font-size: 14px; padding: 10px;">
+    Carregando Private Fields...
+  </div>
+</body>
+</html>

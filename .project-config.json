@@ -1,0 +1,35 @@
+{
+  "build_command": "pnpm run build",
+  "capabilities": [],
+  "dev_command": "pnpm run dev",
+  "env_vars": {},
+  "experiments": null,
+  "git_remote": {
+    "repo_url": "s3://vida-prod-gitrepo/webdev-git/310519663721020791/iLwdZCFm4AGDoqi2JevWDL",
+    "access_key_id": "ASIAZV3A2ECZNPUJNE5S",
+    "secret_access_key": "vZKxfn6KT7Tz81J4/HaXQYO6zLp8TmJymlMAJ+ce",
+    "session_token": "IQoJb3JpZ2luX2VjEEwaCXVzLWVhc3QtMSJGMEQCIGjqyrzfM7MWZQ/lEHiG81vorIluFVieVnxb5OjB7+HhAiAplIfKjEy+U5lKQObjAS850/EFfX6DnrU90M8mwrK2TCr2AwgUEAQaDDY2NTM4NjA5ODg2NiIMVkBl9U6Wkf8GbrU/KtMDM2yW/tVdop931W3p75j61BiCTV4xRgV/2GQKSwamHi4UEQd06sDQrHzbgFtujuH0P3q/rwSGRf9dGR+C95V539qLLgXIRrNcnrMKJQJ8Orv4OEzjw/LStyn7wJ+67Ned0KM2BlDg/HwgYN9mTgFpjmORbMqrSk7YBNXsqhMKTenSClHzq6/DpYUBjlyLynjkg7+oGTqfbIrT3/XY6QFysgkkPQ8pQlDAcfnR/zr8O4EQEs3XGR2XvVgVboC/O/2FDze9SHYLGAMp4d1R9Y6kulNtvkBsBpwVfNnhTPTrahqH0pcsH4FJnS6BOepzu8pSCtVecBDpQBIwnOD+aO5UKN041SQ9vYVNRsIqCmXRYJ3YQUmQnBtJ96TC/SqrUeewKpNfD/XAOMDyFwMTdv99cmqVQm80KpUURxiEB1wc7I0xY7xahtQ/INIyRRAdkiQExO5YIvmIrkrlAI5cLNyQMO2msAX5iNORw9WnF55gLe6RCakmXiGdn3JJrK41RIrleM/mxQcN7Y5Af5xEaHtsoTT5Mnbs1NajTyp6qzm9mw0bMkBLv0ejLLNLeQiIb5vFa2WsW5Qktk0d7RyQcynxk7NHh9z78sXrfZHyWQZl5ALi1B4w7LD30AY6ngE11Bbvjuh2FboTlAzX1WpaYMVIfx2pdm8L8dsPH3dyHPzHL/KshlWfRlmtIAHQMIY+5KnMYNnF/TPS2HVvgmLaJftqV61ifpypSURwZezD1B6B9GjBd9T/cK5XiJF9WJjfIewSBSzp07xUGtjr0jOWD7RnVbqChIR6tk5nG6JENQXLp4/F2h0/dITaP0ntZl4/PYxIlHAM3IcmOEWrXA==",
+    "expiration": "2026-06-02T07:07:24.000Z"
+  },
+  "name": "private-fields-trello-powerup",
+  "path": "/home/ubuntu/private-fields-trello-powerup",
+  "port": 3000,
+  "secrets": {
+    "BUILT_IN_FORGE_API_KEY": "JNbqdKjT42C7Mnw3S24cAT",
+    "BUILT_IN_FORGE_API_URL": "https://forge.manus.ai",
+    "JWT_SECRET": "GhtKshRuCR3No3iy59Ybk2",
+    "OAUTH_SERVER_URL": "https://api.manus.im",
+    "OWNER_NAME": "Prisma esquadrias",
+    "OWNER_OPEN_ID": "EFLsGuknk8ApjEoJ93uie9",
+    "VITE_ANALYTICS_ENDPOINT": "https://manus-analytics.com",
+    "VITE_ANALYTICS_WEBSITE_ID": "46fd5dcf-e235-49c9-b1d1-75fdef37da3e",
+    "VITE_APP_ID": "iLwdZCFm4AGDoqi2JevWDL",
+    "VITE_APP_LOGO": "",
+    "VITE_APP_TITLE": "Private Fields Trello Power-Up",
+    "VITE_FRONTEND_FORGE_API_KEY": "c7X3BYYukTM8gd4cvUyUBK",
+    "VITE_FRONTEND_FORGE_API_URL": "https://forge.manus.ai",
+    "VITE_OAUTH_PORTAL_URL": "https://manus.im"
+  },
+  "template_id": "web-static",
+  "test_command": "pnpm test"
+}

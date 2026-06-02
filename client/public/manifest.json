@@ -1,0 +1,12 @@
+{
+  "name": "Private Fields",
+  "details": "Crie campos personalizados ilimitados, organizados em grupos e templates, com suporte a campos dependentes, drag-and-drop e exportação Excel, sem utilizar os Custom Fields nativos do Trello.",
+  "icon": {
+    "url": "./icon.svg"
+  },
+  "capabilities": [
+    "card-back-section",
+    "show-settings",
+    "board-buttons"
+  ]
+}

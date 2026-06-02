@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Private Fields Connector</title>
+  <script src="https://p.trellocdn.com/power-up.min.js"></script>
+</head>
+<body>
+  <script>
+    // Inicializar o Power-Up com as capacidades necessárias
+    window.TrelloPowerUp.initialize({
+      // 1. Seção traseira do cartão (Card Back Section)
+      'card-back-section': function(t, options) {
+        return {
+          title: 'Private Fields',
+          icon: './icon.svg', // Caminho relativo para o ícone
+          content: {
+            type: 'iframe',
+            url: t.signUrl('./card-back.html'),
+            height: 250 // Altura inicial do iframe
+          }
+        };
+      },
+      
+      // 2. Área de configurações do Power-Up (Show Settings)
+      'show-settings': function(t, options) {
+        return t.modal({
+          title: 'Configuração - Private Fields',
+          url: t.signUrl('./settings.html'),
+          height: 700,
+          fullscreen: false
+        });
+      },
+
+      // 3. Botão do quadro para exportar dados para Excel
+      'board-buttons': function(t, options) {
+        return [{
+          icon: './icon.svg',
+          text: 'Exportar Private Fields',
+          callback: function(t) {
+            return t.modal({
+              title: 'Exportar Dados para Excel',
+              url: t.signUrl('./export.html'),
+              height: 400
+            });
+          }
+        }];
+      }
+    });
+  </script>
+</body>
+</html>

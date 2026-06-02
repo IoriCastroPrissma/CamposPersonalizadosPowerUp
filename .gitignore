@@ -1,0 +1,34 @@
+# Dependências
+node_modules/
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# Build
+dist/
+build/
+.vite/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Ambiente
+.env
+.env.local
+.env.*.local
+
+# Manus
+.manus-logs/
+screenshots/
