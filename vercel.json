@@ -18,13 +18,29 @@
           "value": "nosniff"
         },
         {
-          "key": "X-Frame-Options",
-          "value": "SAMEORIGIN"
+          "key": "Content-Security-Policy",
+          "value": "frame-ancestors 'self' https://trello.com"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
         }
       ]
     }
   ],
   "rewrites": [
+    {
+      "source": "/connector.html",
+      "destination": "/connector.html"
+    },
+    {
+      "source": "/settings.html",
+      "destination": "/settings.html"
+    },
+    {
+      "source": "/card-back.html",
+      "destination": "/card-back.html"
+    },
     {
       "source": "/(.*)",
       "destination": "/index.html"
