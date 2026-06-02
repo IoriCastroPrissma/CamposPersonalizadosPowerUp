@@ -3,21 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Private Fields - Configurações</title>
+  <link rel="stylesheet" crossorigin href="/assets/index-B1ZPUjSP.css">
   <script src="https://p.trellocdn.com/power-up.min.js"></script>
-  <script>
-    const t = window.TrelloPowerUp.iframe();
-    const context = t.getContext();
-    const queryParams = new URLSearchParams({
-      view: 'settings',
-      boardId: context.board,
-      memberId: context.member
-    });
-    window.location.href = './index.html?' + queryParams.toString();
-  </script>
 </head>
 <body>
-  <div style="font-family: sans-serif; color: #5e6c84; font-size: 14px; padding: 20px;">
-    Carregando painel de configuração...
-  </div>
+  <div id="root"></div>
+  <script type="module" crossorigin src="/assets/index-Hv3JZX-v.js"></script>
+  <script>
+    var t = window.TrelloPowerUp.iframe( );
+    t.render(function() {
+      return t.sizeToFit();
+    });
+  </script>
 </body>
 </html>
